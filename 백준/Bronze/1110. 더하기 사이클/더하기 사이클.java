@@ -7,7 +7,7 @@ public class Main {
         int n = sc.nextInt();
         int n2 = n;
         while(true){
-            n=((n%10)*10)+(((n%10)+(n/10))%10);
+            n=(n/10+n%10)%10 + (n%10)*10;
             count++;
             if(n==n2){
                 break;
